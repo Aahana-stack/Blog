@@ -1,0 +1,105 @@
+body{
+	margin: 0px;
+	background-color: #F2EFE5;
+}
+
+@font-face{
+	font-family: Meditative;
+	src: url("../fonts/meditative/Meditative.ttf"); 	
+}
+
+#heading{
+	font-family: Meditative;
+}
+
+#page{
+	display: grid;
+	grid-template-rows: 7% auto 5%;
+}
+
+#center{
+	display: grid;
+	grid-template-columns: 3fr 1fr;
+	grid-gap: 2%;
+}
+
+#archives{
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+#header{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	text-align: center;
+	background-color: lightgray;
+	align-items: center;
+}
+
+#heading{
+	text-decoration: underline;
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+#searchicon{
+	width: 20px;
+	height: 20px;
+}
+
+#mainsection{
+	margin: 3%;
+}
+
+#tiles{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.tile{
+	display: flex;
+	flex-direction: column;
+	border: 2px solid lightgray;
+	border-radius: 20px;
+	padding: 15px;
+	margin: 10px;
+	box-shadow: 5px 5px 5px gray;
+	margin-top: 0;
+	background-color: #E3E1D9;
+	transition: transform 0.3s ease;
+}
+
+.tile:hover {
+	transform: scale(1.02);
+}
+
+#social img{
+	width: 20px;
+	height: 20px;
+}
+
+#footer{
+	padding-top: 3%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	background-color: lightgray;
+	padding: 10px;
+}
+
+#search img{
+	width: 20px;
+	height: 20px;
+	margin-right: 10px;
+	transition: all 1s;
+}
+
+#search img:hover + input { 
+	display: inline; 
+} 
+
+input{
+	border-radius: 5%;
+	display: none;
+	transition: all 1s;
+}
